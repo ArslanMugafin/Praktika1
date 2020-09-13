@@ -52,7 +52,7 @@ public class Prackt1 {
                     System.out.print(x+"\n"+y+"\n");
                     int otvet = 0;
                     for (int i=0;i<5;i++){
-                        if (x>box[i].x1 && x<box[i].x2 && y>box[i].y1 && y<box[i].y2){
+                        if (x>=box[i].x1 && x<=box[i].x2 && y>=box[i].y1 && y<=box[i].y2){
                             otvet = box[i].Num;
                             System.out.print("Вы попали в поле"+box[i].Num);
                             break;
