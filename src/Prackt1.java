@@ -32,10 +32,10 @@ public class Prackt1 {
         wind5.y2 = 10;
         Box[] box = new Box[5];
         box[0]=wind1;
-        box[1]=wind1;
-        box[2]=wind1;
-        box[3]=wind1;
-        box[4]=wind1;
+        box[1]=wind2;
+        box[2]=wind3;
+        box[3]=wind4;
+        box[4]=wind5;
         if (args.length>4)
             System.out.println("Ошибка");
         else {if (args.length==0)
@@ -46,7 +46,7 @@ public class Prackt1 {
             if (args[0].equals("-h") | args[0].equals("-help")){
                 System.out.println("Название\n"+"Мугафин А.В.\n"+"Нужно ввести значение x и y и тогда программа выдаст номер компоненты которая используется.\n"+" Пример: -x 2 -y 5");
             } else {
-                if (args[0].equals("-x") & args[2].equals("-y")){
+                if (args[0].equals("-x") && args[2].equals("-y")){
                     double x = Double.parseDouble(args[1]);
                     double y = Double.parseDouble(args[3]);
                     System.out.print(x+"\n"+y+"\n");
@@ -54,7 +54,7 @@ public class Prackt1 {
                     for (int i=0;i<5;i++){
                         if (x>=box[i].x1 && x<=box[i].x2 && y>=box[i].y1 && y<=box[i].y2){
                             otvet = box[i].Num;
-                            System.out.print("Вы попали в поле"+box[i].Num);
+                            System.out.print("Вы попали в поле "+box[i].Num);
                             break;
                         }
                     }
